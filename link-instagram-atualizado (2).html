@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renata Penko Maximiliano</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#FBF6EF;
+  --text:#2A211A;
+  --accent:#B36A45;
+  --hover:#9C5637;
+  --border:rgba(179,106,69,0.25);
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem 1.25rem;position:relative;overflow:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:absolute;top:-120px;right:-120px;width:380px;height:380px;border-radius:50%;background:rgba(179,106,69,.08);pointer-events:none}
+body::after{content:'';position:absolute;bottom:-80px;left:-80px;width:260px;height:260px;border-radius:50%;background:rgba(179,106,69,.06);pointer-events:none}
+
+.wrap{width:100%;max-width:400px;position:relative;z-index:1;animation:fadeUp .8s ease both;text-align:center}
+
+.avatar{width:80px;height:80px;border-radius:50%;background:rgba(179,106,69,.12);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--accent)}
+
+.name{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,7vw,36px);font-weight:600;line-height:1.15;color:var(--text);margin-bottom:1.5rem}
+.name em{font-style:italic;color:var(--accent)}
+
+.spec{font-size:clamp(16px,4.2vw,20px);color:var(--text);line-height:1.6;margin-bottom:2rem;font-family:'Cormorant Garamond',serif;font-weight:600}
+
+.btns{display:flex;flex-direction:column;gap:10px}
+
+.btn{display:block;text-decoration:none;border-radius:14px;padding:16px 20px;font-family:'DM Sans',sans-serif;transition:all .2s;text-align:center}
+
+.btn-destaque{background:var(--accent);border:none;box-shadow:0 4px 14px rgba(179,106,69,.28)}
+.btn-destaque:hover{background:var(--hover);transform:translateY(-1px)}
+.btn-destaque .btn-eye{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.85);display:block;margin-bottom:4px;font-weight:700}
+.btn-destaque .btn-label{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;color:#FFFFFF;line-height:1.3}
+
+.btn-destaque-alt{background:#FFFFFF;border:1.5px solid var(--accent)}
+.btn-destaque-alt:hover{background:rgba(179,106,69,.06);transform:translateY(-1px)}
+.btn-destaque-alt .btn-eye{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px;font-weight:700}
+.btn-destaque-alt .btn-label{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;color:var(--text);line-height:1.3}
+
+.btn-ghost{background:#FFFFFF;color:var(--text);border:1.5px solid var(--border);font-size:14px;font-weight:600;letter-spacing:.01em}
+.btn-ghost:hover{background:rgba(179,106,69,.08);color:var(--text)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:400px){body{padding:1.5rem 1rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="avatar">R</div>
+
+  <div class="name">Renata Penko <em>Maximiliano</em></div>
+
+  <div class="spec">Você não sofre por causa dos relacionamentos.<br>Sofre por causa de quem se torna dentro deles.</div>
+
+  <div class="btns">
+
+    <a href="https://renatapenko.github.io/reset.do.amor.pag/" class="btn btn-destaque">
+      <span class="btn-eye">Reset do Amor · 7 dias</span>
+      <span class="btn-label">Trate as feridas emocionais que travam seu relacionamento</span>
+    </a>
+
+    <a href="https://sessao-pocket.netlify.app" class="btn btn-destaque-alt">
+      <span class="btn-eye">Sessão Individual™</span>
+      <span class="btn-label">Descubra a origem do padrão que te afasta do amor que você quer</span>
+    </a>
+
+    <a href="https://wa.me/5567981448229?text=Olá%2C%20quero%20saber%20mais" class="btn btn-ghost" target="_blank">Falar comigo no WhatsApp</a>
+
+  </div>
+
+</div>
+</body>
+</html>
